@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+
+    <link rel="stylesheet" href="./button-show-more.css" />
+  </head>
+  <body>
+    <div class="btn-show">
+      <button type="button" class="button-add btn-animate" data-btn-show-open>
+        show more
+      </button>
+    </div>
+
+    <!-- МОДАЛЬНЕ ВІКНО -->
+    <div class="backdrop is-hidden" data-showMoreModal>
+      <div class="about-modal">
+        <button class="about-modal__button-close" data-btn-show-close>X</button>
+
+        <div class="about-modal__wrap">
+          <article class="about__article">
+            <h2 class="about-modal__header">About Product</h2>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <script src="./pop-up.js"></script>
+  </body>
+</html>
