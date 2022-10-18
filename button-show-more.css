@@ -160,7 +160,12 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 5px 10px #334FB4;
 }
-
+.about-modal__header{
+    color:#334FB4 ;
+}
+.about-modal_text{
+    color:#334FB4;
+}
  .about-video__wrap{
      background-color: rgb(171, 225, 234);
      display: flex;
