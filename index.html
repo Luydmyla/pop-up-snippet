@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
-
+    <title>Заголовок сторінки</title>
     <link rel="stylesheet" href="./button-show-more.css" />
   </head>
   <body>
@@ -18,11 +17,16 @@
     <div class="backdrop is-hidden" data-showMoreModal>
       <div class="about-modal">
         <button class="about-modal__button-close" data-btn-show-close>X</button>
-
-        <div class="about-modal__wrap">
-          <article class="about__article">
-            <h2 class="about-modal__header">About Product</h2>
-          </article>
+        <h2 class="about-modal__header">About Product</h2>
+        <div class="about-video__wrap">
+          <iframe
+            src="/video/VID_20210302_113248.mp4"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="about-video-player"
+          ></iframe>
+          <p>Text</p>
         </div>
       </div>
     </div>

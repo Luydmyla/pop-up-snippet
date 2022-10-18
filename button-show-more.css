@@ -1,4 +1,14 @@
+body {
+     background: #fff;
+     text-align: center;
+     padding: 50px;
+     box-sizing: border-box;
+   }
 
+.btn-show{
+    display: flex;
+    justify-content: center;
+}
 .button-add {
    
         width: 112px;
@@ -16,14 +26,9 @@
         color: #334FB4;
         background-color: transparent;
     }
-
-   
-
-
-.button-add:hover {
-   
+.button-add:hover {  
         transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
         box-shadow: 0 10px 20px #334FB4;
         width: 113px;
         height: 44px;
@@ -33,12 +38,9 @@
         color: #334FB4;
     }
 
-   
-
-
 .button-add:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
     box-shadow: 0 5px 10px #334FB4;
 }
 .btn-animated {
@@ -57,8 +59,8 @@
         transform: translateY(0px);
     }
 }
-/* ------МОДАЛЬНОЕ ОКНО---------- */
-/* ---бекдроп видимый----- */
+/* ------МОДАЛЬНЕ ВІКНО---------- */
+/* ---бекдроп видимий----- */
 .backdrop {
     position: fixed;
     top: 0;
@@ -87,33 +89,22 @@
     .is-hidden  .about-modal {
             transform: scale(0.1);
         }
-    
 
-   
-
-
- /*----- само модальное окно--- */
+ /*----- саме модальне вікно--- */
 .about-modal {
-    /* // position:absolute;
-    // top: 50%;
-    // left: 50%; */
     margin: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
-    width: 600px;
-    height: 600px;
+    /* width: 600px; */
+    /* width: 60%; */
+    /* height: 600px; */
     padding: 15px;
     z-index: 21;
     border-radius: 10px;
     background-color: #fff;
-    /* // background-image: url('/images/about/about-bg-mob1x.png');
-    // background-position: left 0 bottom 150px;
-    // background-size: contain;
-    // background-repeat: no-repeat; */
-
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: scale(1);
@@ -125,7 +116,7 @@
     }
 }
 
-/* ----КНОПКА ЗАКРЫТЬ---- */
+/* ----КНОПКА ЗАКРИТИ---- */
 .about-modal__button-close {
     position: absolute;
     top: 15px;
@@ -157,12 +148,10 @@
     
 }
 .about-modal__button-close:hover {
-   
         box-shadow:  10px 10px 20px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 5px 30px #334FB4;
-               background: #fff;
+        background: #fff;
         border: 1px solid #334FB4;
-      
         color: #334FB4;
     }
 
@@ -172,7 +161,14 @@
     box-shadow: 0 5px 10px #334FB4;
 }
 
- /* .btn-animated {
-    animation: moveInBottom 5s ease-out;
-     animation-fill-mode: backwards;
- } */
+ .about-video__wrap{
+     background-color: rgb(171, 225, 234);
+     display: flex;
+     flex-direction: column;
+     padding: 15px;
+     margin: 15px;
+ }
+ .about-video-player{
+    width: 320px;
+    height: 315px;
+ }
